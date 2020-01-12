@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaultHref="/tabs/plantes">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ planet?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngIf="planet">
+    <ion-card-content>
+      Climate: {{ planet.climate }}
+    </ion-card-content>
+    <ion-card-content>
+      Diameter: {{ planet.diameter }}
+    </ion-card-content>
+    <ion-card-content>
+      Gravity: {{ planet.gravity }}
+    </ion-card-content>
+    <ion-card-content>
+      Orbital Period: {{ planet.orbital_period }}
+    </ion-card-content>
+    <ion-card-content>
+      Rotation Period: {{ planet.rotation_period }}
+    </ion-card-content>
+    <ion-card-content>
+      Population: {{ planet.population }}
+    </ion-card-content>
+    <ion-card-content>
+      Population: {{ planet.surface_water }}
+    </ion-card-content>
+    <ion-card-content>
+      Terrain: {{ planet.terrain }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
