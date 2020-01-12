@@ -1,0 +1,7 @@
+{
+  "name": "DeathStarAPI",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
