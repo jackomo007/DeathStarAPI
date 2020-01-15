@@ -7,13 +7,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content color="secondary" padding>
 
   <ion-card *ngIf="film">
     <ion-card-content>
       Producers: {{ film.producer }}
     </ion-card-content>
-    <ion-card-content>
+    <ion-card-content class="legend">
       {{ film.opening_crawl }}
     </ion-card-content>
   </ion-card>

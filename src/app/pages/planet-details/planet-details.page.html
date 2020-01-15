@@ -7,32 +7,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content color="secondary" padding>
 
   <ion-card *ngIf="planet">
     <ion-card-content>
-      Climate: {{ planet.climate }}
+      <ion-icon name="partly-sunny"></ion-icon> Climate: {{ planet.climate }}
     </ion-card-content>
     <ion-card-content>
-      Diameter: {{ planet.diameter }}
+      <ion-icon name="resize"></ion-icon> Diameter: {{ planet.diameter }}
     </ion-card-content>
     <ion-card-content>
-      Gravity: {{ planet.gravity }}
+      <ion-icon name="code-download"></ion-icon> Gravity: {{ planet.gravity }}
     </ion-card-content>
     <ion-card-content>
-      Orbital Period: {{ planet.orbital_period }}
+      <ion-icon name="stopwatch"></ion-icon> Orbital Period: {{ planet.orbital_period }}
     </ion-card-content>
     <ion-card-content>
-      Rotation Period: {{ planet.rotation_period }}
+      <ion-icon name="time"></ion-icon> Rotation Period: {{ planet.rotation_period }}
     </ion-card-content>
     <ion-card-content>
-      Population: {{ planet.population }}
+      <ion-icon name="people"></ion-icon> Population: {{ planet.population }}
     </ion-card-content>
     <ion-card-content>
-      Population: {{ planet.surface_water }}
+      <ion-icon name="water"></ion-icon> Surface Water: {{ planet.surface_water }}
     </ion-card-content>
     <ion-card-content>
-      Terrain: {{ planet.terrain }}
+      <ion-icon name="image"></ion-icon> Terrain: {{ planet.terrain }}
     </ion-card-content>
   </ion-card>
 

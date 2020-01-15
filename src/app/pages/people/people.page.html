@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>people</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Characters</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
   <ion-list>
     <ion-item button detail lines="inset" *ngFor="let people of (peoples | async)?.results"
       (click)="openDetails(people)">

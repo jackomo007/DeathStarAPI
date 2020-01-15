@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>planets</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Planets</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
   <ion-list>
     <ion-item button detail lines="inset" *ngFor="let planet of (planets | async)?.results"
       (click)="openDetails(planet)">
