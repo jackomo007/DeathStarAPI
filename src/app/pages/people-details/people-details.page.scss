@@ -1,9 +1,12 @@
 .movie-info {
     --background: #4a4a4a;
+    ion-icon{
+        color: gold;
+    }
 }
 
 ion-icon{
-    color: blue;
+    color: #4f68d2;
 }
 
 ion-card{
@@ -11,5 +14,5 @@ ion-card{
 }
 
 .name{
-    color: gold;
+    color: white;
 }
