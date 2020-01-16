@@ -1,30 +1,39 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start" defaultHref="/tabs/people">
-      <ion-back-button color="warning"></ion-back-button>
+      <ion-back-button color="success"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ people?.name }}</ion-title>
+    <ion-title class="name">{{ people?.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="secondary" padding>
 
   <ion-card *ngIf="people">
-    <ion-card-content>
-      <ion-icon name="star"></ion-icon> Birth Year: {{ people.birth_year }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="color-filter"></ion-icon> Hair Color: {{ people.hair_color }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="color-fill"></ion-icon> Skin Color: {{ people.skin_color }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="eye"></ion-icon> Eyes Color: {{ people.eye_color }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="transgender"></ion-icon> Gender: {{ people.gender }}
-    </ion-card-content>
+    <ion-item lines="none">
+      <ion-icon name="star" slot="start"></ion-icon>
+      Birth Year: {{ people.birth_year }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="contrast" slot="start"></ion-icon>
+      Hair Color: {{ people.hair_color }}
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="color-fill" slot="start"></ion-icon>
+      Skin Color: {{ people.skin_color }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="eye" slot="start"></ion-icon>
+      Eyes Color: {{ people.eye_color }}
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="transgender" slot="start"></ion-icon>
+      Gender: {{ people.gender }}
+    </ion-item>
   </ion-card>
 
 </ion-content>

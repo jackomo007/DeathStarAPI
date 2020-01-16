@@ -1,7 +1,14 @@
+.movie-info {
+    --background: #4a4a4a;
+    ion-icon{
+        color: gold;
+    }
+}
+
+ion-icon{
+    color: #4f68d2;
+}
+
 ion-card{
-    background-color: #87868e;
-    color: #151d43;
-    font-weight: 100;
-    font-family: fantasy;
-    font-size: large;
+    background-color: #4a4a4a;
 }

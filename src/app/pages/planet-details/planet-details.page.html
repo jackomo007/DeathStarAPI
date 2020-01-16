@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start" defaultHref="/tabs/plantes">
-      <ion-back-button color="warning"></ion-back-button>
+      <ion-back-button color="medium"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ planet?.name }}</ion-title>
   </ion-toolbar>
@@ -10,30 +10,45 @@
 <ion-content color="secondary" padding>
 
   <ion-card *ngIf="planet">
-    <ion-card-content>
-      <ion-icon name="partly-sunny"></ion-icon> Climate: {{ planet.climate }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="resize"></ion-icon> Diameter: {{ planet.diameter }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="code-download"></ion-icon> Gravity: {{ planet.gravity }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="stopwatch"></ion-icon> Orbital Period: {{ planet.orbital_period }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="time"></ion-icon> Rotation Period: {{ planet.rotation_period }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="people"></ion-icon> Population: {{ planet.population }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="water"></ion-icon> Surface Water: {{ planet.surface_water }}
-    </ion-card-content>
-    <ion-card-content>
-      <ion-icon name="image"></ion-icon> Terrain: {{ planet.terrain }}
-    </ion-card-content>
+    <ion-item lines="none">
+      <ion-icon name="partly-sunny" slot="start"></ion-icon>
+      Climate: {{ planet.climate }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="resize" slot="start"></ion-icon>
+      Diameter: {{ planet.diameter }}
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="code-download" slot="start"></ion-icon>
+      Gravity: {{ planet.gravity }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="stopwatch" slot="start"></ion-icon>
+      Orbital Period: {{ planet.orbital_period }}
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="time" slot="start"></ion-icon>
+      Rotation Period: {{ planet.rotation_period }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="people" slot="start"></ion-icon>
+      Population: {{ planet.population }}
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="water" slot="start"></ion-icon>
+      Surface Water: {{ planet.surface_water }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="image" slot="start"></ion-icon>
+      Terrain: {{ planet.terrain }}
+    </ion-item>
   </ion-card>
 
 </ion-content>

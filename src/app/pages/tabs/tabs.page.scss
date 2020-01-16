@@ -1,9 +1,21 @@
-ion-tab-bar{
-    background-color: #12100f;
+ion-tab-bar {
+  background-color: #12100f;
 }
-ion-tab-button{
-    color: #89211f;
-    --color-selected: #3da360;
-    background-color: #12100f;
 
+.btn1 {
+  color: #89211f;
+  --color-selected: #b94341;
+  background-color: #12100f;
+}
+
+.btn2 {
+  color: #3da360;
+  --color-selected: #57d182;
+  background-color: #12100f;
+}
+
+.btn3 {
+  color: #585a63;
+  --color-selected: #88898f;
+  background-color: #12100f;
 }

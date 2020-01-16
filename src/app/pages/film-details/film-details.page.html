@@ -1,21 +1,28 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start" defaultHref="/tabs/films">
+    <ion-buttons slot="start" defaultHref="/tabs/(films:films)">
       <ion-back-button color="warning"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ film?.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="secondary" padding>
+<ion-content padding>
 
-  <ion-card *ngIf="film">
+  <ion-card *ngIf="film" class="movie-card">
     <ion-card-content>
-      Producers: {{ film.producer }}
-    </ion-card-content>
-    <ion-card-content class="legend">
       {{ film.opening_crawl }}
     </ion-card-content>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="film" slot="start"></ion-icon>
+      Director: {{ film.director }}
+    </ion-item>
+
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="calendar" slot="start"></ion-icon>
+      Release Date: {{ film.release_date | date }}
+    </ion-item>
   </ion-card>
 
 </ion-content>

@@ -3,6 +3,20 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-background-color: var(--ion-color-dark);
+  --ion-text-color: #fff;
+  
+  --ion-text-color-rgb: 255, 255, 255;
+
+  ion-card {
+    --color: #fff;
+  }
+
+  ion-item {
+    --border-color: var(--ion-color-light);
+    --detail-push-color: var(--ion-color-light);
+  }
+  
   /** primary **/
   --ion-color-primary: #12100f;
   --ion-color-primary-rgb: 56, 128, 255;
