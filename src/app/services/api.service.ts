@@ -13,7 +13,7 @@ export class ApiService {
   }
 
   getFilm(id) {
-    return this.http.get(`https://swapi.dev/api/films/${id}`);
+    return this.http.get(`https://swapi.dev/api/films/${id}/`);
   }
 
   getPeoples() {
@@ -21,7 +21,7 @@ export class ApiService {
   }
 
   getPeople(id) {
-    return this.http.get(`https://swapi.dev/api/people/${id}`);
+    return this.http.get(`https://swapi.dev/api/people/${id}/`);
   }
 
   getPlanets() {
@@ -29,6 +29,6 @@ export class ApiService {
   }
 
   getPlanet(id) {
-    return this.http.get(`https://swapi.dev/api/planets/${id}`);
+    return this.http.get(`https://swapi.dev/api/planets/${id}/`);
   }
 }
