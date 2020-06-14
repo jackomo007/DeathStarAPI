@@ -17,7 +17,7 @@ export class ApiService {
   }
 
   getPeoples() {
-    return this.http.get('https://swapi.dev/api/people');
+    return this.http.get('https://swapi.dev/api/people/');
   }
 
   getPeople(id) {
@@ -25,7 +25,7 @@ export class ApiService {
   }
 
   getPlanets() {
-    return this.http.get('https://swapi.dev/api/planets');
+    return this.http.get('https://swapi.dev/api/planets/');
   }
 
   getPlanet(id) {
