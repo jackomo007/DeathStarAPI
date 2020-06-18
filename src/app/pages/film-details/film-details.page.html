@@ -19,7 +19,35 @@
 
   <ion-card *ngIf="film" class="movie-card">
     <ion-card-content>
-      {{ film.opening_crawl }}
+      <div class="star-wars-intro">
+
+        <p class="intro-text">
+          {{film.title}}
+        </p>
+    
+        <h2 class="main-logo">
+          <img src="./../../../assets/star-wars-intro.png">
+        </h2>
+    
+        <div class="main-content">
+    
+          <div class="title-content">
+            <p class="content-header">{{film.title}}</p>
+    
+            <br>
+    
+            <p class="content-body">
+              {{ film.opening_crawl }}  
+            </p>
+    
+            <br>
+    
+            <a href="#" class="space-button">Download StarWarsIntro.css</a>
+              
+          </div>
+        </div>
+      </div>
+      <!--  -->
     </ion-card-content>
 
     <ion-item class="movie-info" lines="none">
